@@ -49,6 +49,8 @@ export class FroalaComponent implements OnInit {
 
   @ViewChild('froalaInstance', { static: false }) froalaEditorDirective!: FroalaEditorDirective;
   public options = {
+    zIndex: 1100,
+    scrollableContainer: '.mat-mdc-dialog-surface',
     fontSize: [
       '8',
       '9',
@@ -101,7 +103,6 @@ export class FroalaComponent implements OnInit {
       'fr-wrap-right': 'Image Wrap Right',
     },
     requestHeaders: {},
-    zIndex: 1000,
     toolbarButtons: [
       'lineHeight',
       'bold',
