@@ -50,6 +50,7 @@ export class FroalaComponent implements OnInit {
   @ViewChild('froalaInstance', { static: false }) froalaEditorDirective!: FroalaEditorDirective;
   public options = {
     zIndex: 1100,
+    wordPasteModal: false, // Disables the "Word Paste detected" popup
     scrollableContainer: '.mat-mdc-dialog-surface',
     fontSize: [
       '8',
